@@ -1,4 +1,5 @@
 name: Daily Horizon Summary
+# Trigger note: edits to this workflow file intentionally retrigger verification runs.
 
 on:
   push:
