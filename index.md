@@ -1,12 +1,10 @@
 ---
 layout: default
-title: Latest Summary
+title: 最新日报
 ---
 
 {% assign zh_posts = site.posts | where: "lang", "zh" %}
 {% assign latest_zh = zh_posts.first %}
-{% assign en_posts = site.posts | where: "lang", "en" %}
-{% assign latest_en = en_posts.first %}
 
 {% if latest_zh %}
 <meta http-equiv="refresh" content="0; url={{ latest_zh.url | relative_url }}">
@@ -32,9 +30,3 @@ title: Latest Summary
 - [信息源采集器](scrapers)
 - [评分系统](scoring)
 - [GitHub 仓库](https://github.com/jackzhang42/Horizon)
-
-{% if latest_en %}
-## English
-
-[Open the latest English digest: {{ latest_en.date | date: "%Y-%m-%d" }}]({{ latest_en.url | relative_url }})
-{% endif %}
