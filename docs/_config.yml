@@ -1,8 +1,10 @@
 theme: jekyll-theme-cayman
-title: Horizon Daily
-description: AI-curated daily digest of tech and research news
+title: Horizon 中文日报
+description: 每日自动生成的中文科技与研究资讯摘要
 baseurl: "/Horizon" # the subpath of your site, e.g. /blog
 url: "https://jackzhang42.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+lang: zh-CN
+locale: zh_CN
 
 # Build settings
 markdown: kramdown
