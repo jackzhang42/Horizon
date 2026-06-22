@@ -124,9 +124,27 @@
     }
   }
 
+  /** Add a persistent navigation button to the history page */
+  function setupHistoryButton() {
+    var historyMeta = document.querySelector('meta[name="horizon-history-url"]');
+    if (!historyMeta || !historyMeta.content) return;
+
+    var nav = document.createElement('div');
+    nav.className = 'history-nav';
+
+    var link = document.createElement('a');
+    link.href = historyMeta.content;
+    link.textContent = '历史日报';
+    link.setAttribute('aria-label', '打开历史日报页面');
+
+    nav.appendChild(link);
+    document.body.insertBefore(nav, document.body.firstChild);
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     processScoreBadges();
     markSemanticElements();
+    setupHistoryButton();
     setupLanguageToggle();
   });
 })();
