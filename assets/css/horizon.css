@@ -189,3 +189,30 @@ h1, h2, h3, h4, h5, h6 {
 .lang-section.hidden {
   display: none;
 }
+
+/* --- History Button (fixed top-left) --- */
+.history-nav {
+  position: fixed;
+  top: 12px;
+  left: 16px;
+  z-index: 1000;
+}
+
+.history-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35em 1em;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 3px;
+  background: rgba(0,0,0,0.15);
+  color: #fff !important;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+}
+
+.history-nav a:hover {
+  background: var(--hz-accent);
+  border-color: var(--hz-accent);
+}
