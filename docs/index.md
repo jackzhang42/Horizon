@@ -25,7 +25,8 @@ title: 最新日报
 
 ## 快速入口
 
-- [中文归档]({{ '/feed-zh.xml' | relative_url }})
+- [历史日报]({{ '/history' | relative_url }})
+- [中文 RSS]({{ '/feed-zh.xml' | relative_url }})
 - [配置指南](configuration)
 - [信息源采集器](scrapers)
 - [评分系统](scoring)
